@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Pepsi Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="logo.png" class="logo" alt=""></a>
+            <ul>
+                <li><a href="https://www.pepsi.com/">Home</a></li>
+                <li><a href="https://www.pepsi.com/#!products">Products</a></li>
+                <li><a href="https://p.pepsi.com/signup">News letter</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="https://contact.pepsico.com/pepsi">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>That's What <br><span>I Like</span></h2>
+                <p>Pepsi is a carbonated soft drink manufactured by PepsiCo. Originally created and developed in 1893 by Caleb Bradham and introduced as Brad's Drink, it was renamed as Pepsi-Cola in 1898, and then shortened to Pepsi in 1961.</p>
+                <a href="https://www.pepsi.com/#!products">View All products</a>
+            </div>
+            <div class="imgBox">
+                <img src="pepsi001.png" class="pepsi">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="pepsi001.png" onclick="imgSlider('pepsi001.png');changeBgcolor('#0062be')"></li>
+            <li><img src="pepsi002.png" onclick="imgSlider('pepsi002.png');changeBgcolor('#e60c2c')"></li>
+            <li><img src="pepsi003.png" onclick="imgSlider('pepsi003.png');changeBgcolor('#1e1e1e')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/pepsipk/"><img src="facebook.png" ></a></li>
+            <li><a href="https://www.instagram.com/pepsi/?hl=en"><img src="instagram.png" ></a></li>
+            <li><a href="https://twitter.com/pepsi?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="twitter.png" ></a></li>
+        </ul>
+    </section>
+    <script>
+        function imgSlider(anything){
+            document.querySelector('.pepsi').src = anything;
+        }
+        function changeBgcolor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+    </script>
+</body>
+</html>
